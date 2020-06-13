@@ -6,7 +6,7 @@ import '@/assets/style/app.styl';
 
 const App: React.FC = () => {
   return (
-    <Provider store={store}>`
+    <Provider store={store}>
       <Suspense fallback={null}>
         <AppRouter/>
       </Suspense>
