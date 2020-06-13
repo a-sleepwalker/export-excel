@@ -492,9 +492,9 @@ module.exports = function (webpackEnv) {
               test: /\.styl$/,
               use: getStyleLoaders({
                   importLoaders: 3,
-                  modules: {
-                    localIdentName: '[local]-[hash:base64:8]',
-                  },
+                  // modules: {
+                  //   localIdentName: '[local]-[hash:base64:8]',
+                  // },
                   sourceMap: isEnvProduction && shouldUseSourceMap,
                 },
                 'stylus-loader'),

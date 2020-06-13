@@ -9,7 +9,7 @@ const proxyTable = {};
 if (NODE_ENV === 'development') {
   merge(proxyTable, {
     '/api': {
-      target: 'http://localhost:8008/api/export',
+      target: 'http://localhost:8008',
       changeOrigin: true,
       pathRewrite: {
         '^/api': '',
